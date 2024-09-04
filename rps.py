@@ -81,8 +81,8 @@ def play_player_game():
         print("✂️  ┋ Scissors")
         time.sleep(0.5)
         # Use getpass for player moves to hide input
-        player1_move = getpass.getpass(f"Enter your move {player1}: (R, P, or S)").lower()
-        player2_move = getpass.getpass(f"Enter your move {player2}: (R, P, or S)").lower()
+        player1_move = getpass.getpass(f"Enter your move {player1}: (R, P, or S)[Input is hidden!]").lower()
+        player2_move = getpass.getpass(f"Enter your move {player2}: (R, P, or S)[Input is hidden!]").lower()
         if player1_move not in game_list or player2_move not in game_list:
             print("❌ ⤿ Invalid move! Please enter R, P, or S.")
             time.sleep(1)
